@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+} 
+.social-icons a {
+    font-size: 20px;
+    /* Adjust icon size */
+    margin-right: 15px;
+}
+
+.social-icons a .fa-facebook {
+    color: #1877F2;
+    /* Facebook's official color */
+}
+
+.social-icons a .fa-twitter {
+    color: #1DA1F2;
+    /* Twitter's official color */
+}
+
+.social-icons a .fa-github {
+    color: #1877F2;
+    /* Instagram's official color */
+}
+
+.social-icons a .fa-linkedin {
+    color: #0077B5;
+    /* LinkedIn's official color */
+}
+
+.blinking-text {
+    /* Adjust the font size */
+    font-weight: bold;
+    color: red;
+    /* Initial color */
+    animation: blink-animation 1s steps(7, start) infinite;
+    /* Blink animation */
+}
+
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+        /* Makes text disappear at 50% of the animation duration */
+        color: blue;
+        /* Text color when visible */
+    }
+}
+.home-img {
+    border-radius: 50%;
+}
+.home-img img {
+    position:static;
+    width: 10cm;
+    border-radius:500cm;
+    box-shadow: 0 0 25px solid blue;
+    cursor: pointer;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.home {
+    display:-webkit-inline-flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 2rem;
+    margin-top: 20px;
+    
+}
+
+header {
+    margin-top: 2px;
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color:white;
+}
+/* Styling the header background */
+.main-header {
+    /* Change this color as per your preference */
+    padding: 10px;
+    text-align: center;
+    background-color:gold
+    
+    ;
+}
+
+/* Styling the links in the header */
+.main-header a {
+    color: #007bff;
+    /* Link color */
+    text-decoration:wavy;
+    font-size: 18px;
+}
+
+/* Change color of links on hover */
+.main-header a:hover {
+    color:blue;
+    /* Hover color */
+}
+
+/* Styling the logo link */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* Change logo text color */
+}
+
+/* Optional: Add some space between the logo and navigation */
+nav {
+    display: inline-block;
+    margin-left: 20px;
+}
+body{
+    width:100%;
+    height:100vh;
+    overflow-x: hidden;
+    background-image: url("Sample4.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFE0;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    /* Default shape is a circle */
+    margin: 3rem 1.5rem;
+    transition: all 0.4s ease;
+    /* Smooth transition for all properties */
+    color: aqua;
+    transform: scale(1);
+    /* Default scale */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    /* Enlarges the icon on hover */
+    background-color: aqua;
+    /* Changes background color on hover */
+    color: white;
+    /* Changes text color on hover */
+    border-color: aqua;
+    /* Changes border color */
+}
+
+.social-icons a:hover {
+    border-radius: 10%;
+    /* Changes to a rounded square */
+    transform: rotate(360deg) scale(1.2);
+    /* Adds a full rotation and scaling */
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+<style>
+    
+    .title{
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        margin: 20px 0;
+        font-size: 2rem;
+    }
+*{
+    background-image: url("educationbg.avif");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+}
+.content{
+    color: yellow;
+}
+.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    a{
+        color: white;
+    }
+    a:hover{
+        color: chartreuse;
+    }
+    fieldset {
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 15px 0;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    background-attachment: fixed;
+    border-radius: 25%;
+}
+
+fieldset:hover {
+    transform: scale(1.05); /* Gently scales up the fieldset on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Adds a shadow for a pop-out effect */
+    border-color:gold; /* Changes border color on hover */
+
+    transition: background-color 0.3s ease;
+}
+</style>
+</head>
+<body>
+    <header>
+    <div class = "title"><center><h2>Education details</h2></center></div>
+    </header>
+    <section class="content">
+    <div class ="degree">
+        <fieldset>
+        <legend><h4>Course name : Bachelor of Engineering</h4></legend>
+        <h4>Institution : <a href="https://www.vsbec.edu.in/">V.S.B. Engineering College</a></h4>
+        <h4>University  : Anna University</h4>
+        <h4>Period      : Aug 2021 - May 2025 (current)</h4>
+        </fieldset>
+    </div>
+    <div class ="Hsc">
+        <fieldset>
+       <legend><h4>Course : HSC</h4></legend>
+        <h4>Institution   : <a href="https://www.justdial.com/Karur/Cheran-Matric-Higher-Secondary-School-Vennamalai/9999P4323-4323-101013202925-Y7J5_BZDET">Cheran Matric. Hr. Sec. School.</a></h4>
+        <h4>Board         : State Board</h4>
+        <h4>Group         : Bio-Maths</h4>
+        <h4>Percentage    : 91.5% </h4>
+        <h4>Year          : 2020 - 2021</h4>
+        </fieldset>
+    </div>
+    <div class="sslc">
+        <fieldset>
+            <legend><h4>Course : SSLC</h4></legend>
+            <h4>Institution : <a href="https://www.justdial.com/Karur/Cheran-Matric-Higher-Secondary-School-Vennamalai/9999P4323-4323-101013202925-Y7J5_BZDET">Cheran Matric. Hr. Sec. School.</a></h4>
+            <h4>Board       : State Board</h4>
+            <h4>Percentage  : 91.6%</h4>
+            <h4>Year        : 2018 - 2019</h4>
+            </fieldset>
+    </div>
+    </section>
+</body>
+</html>

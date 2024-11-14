@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("certfibg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #certificates {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 20px 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .cert-card {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.05);
+            /* Gently scales up the card on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            /* Adds a shadow for a pop-out effect */
+            border-color: gold;
+        }
+
+        .cert-card img {
+            border-radius: 8px;
+            width: 100%;
+            /* Ensures image takes full width of the card */
+        }
+
+        .cert-card p {
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .cert-card a {
+            text-decoration: none;
+            color: darkorchid;
+            font-weight: bold;
+        }
+
+        .cert-card a:hover {
+            color: gold;
+        }
+    
+        .cert-card a:visited {
+            color: orangered;
+        }
+        @media (max-width: 768px) {
+            .cert-card {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+    </style>
+    <title>My Certifications</title>
+</head>
+
+<body>
+    <section id="certificates">
+        <h2>My Certifications</h2>
+
+        <div class="cert-card">
+            <img src="Wipro logo.avif" alt="Java Full Stack Certification">
+            <p><strong>Java Full Stack Development</strong><br>
+                Wipro Digital Skills Readiness Program (October 2024)<br>
+                <a href="Wipro Certificate.jpg" target="_blank">View Certificate</a>
+            </p>
+        </div>
+
+        <div class="cert-card">
+            <img src="Cad desk logo.png" alt="Summer Internship at CAD DESK">
+            <p><strong>Web designing</strong><br>
+                Caddesk (July 2023)<br>
+                <a href="Cad Desk certificate.jpg" target="_blank">View Certificate</a>
+            </p>
+        </div>
+
+        <div class="cert-card">
+            <img src="CSC logo.jpg" alt="Advanced Diploma in Python Programming Certification">
+            <p><strong>Advanced Diploma in Python Programming (ADPP)</strong><br>
+                CSC (September 2021)<br>
+                <a href="ADPP Certificate.jpg" target="_blank">View Certificate</a>
+            </p>
+        </div>
+
+        <!-- Add more certificate cards -->
+    </section>
+</body>
+
+</html>

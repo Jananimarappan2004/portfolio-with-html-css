@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        * {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("Sample2.avif");
+        }
+
+        .title {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+            margin: 20px 0;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .cert-card {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.25);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            border: 2px solid gold;
+        }
+
+        .cert-card img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cert-card p {
+            color: #333;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .cert-card h4 {
+            margin: 10px 0;
+            color: darkblue;
+        }
+
+        .cert-card a {
+            text-decoration: none;
+            color: darkorchid;
+            font-weight: bold;
+            background-color: rgba(230, 230, 250, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cert-card a:hover {
+            color: gold;
+            background-color: rgba(255, 215, 0, 0.8);
+        }
+
+        .cert-card a:visited {
+            color: orangered;
+        }
+
+        @media (max-width: 768px) {
+            .cert-card {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">Projects Done</div>
+    </header>
+    <center>
+        <br>
+        <div class="cert-card">
+            <p><strong>Project Name: Advanced AI BlindStick</strong></p>
+            <h4>Domain: IOT</h4>
+            <h4>Project Explanation Video:</h4>
+            <a href="https://youtu.be/jInpBuyIHSg?si=Ve31-9HJbWVnitHL" target="_blank">Click here</a>
+            <h4>Proposal Submitted: DST</h4>
+        </div>
+        <br>
+        <br>
+        <div class="cert-card">
+            <p><strong>Project Name: AI Monitoring and Alerting System</strong></p>
+            <h4>Domain: IOT</h4>
+            <h4>Project ppt:</h4>
+            <a href="IOT based theft[1].pdf" target="_blank">Click here</a>
+            <h4>Proposal Submitted: DST</h4>
+        </div>
+    </center>
+</body>
+
+</html>
